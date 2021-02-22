@@ -4,7 +4,7 @@
             <v-card class="card" :loading="isAjax">
                 <v-img src="/og_banner.png" height="140"></v-img>
                 <v-card-title>
-                    AVAX Fuji Testnet Faucet
+                    Statalanche Testnet Faucet
                 </v-card-title>
 
 
@@ -18,7 +18,7 @@
                         <p v-for="(error, i) in errors" :key="i">*{{error}}</p>
                     </div>
                     <v-alert type="error" dense outlined>
-                        This is a beta faucet. Funds are not real.
+                        This is a testnet faucet. Funds are not real.
                     </v-alert>
                     <v-btn class="submit" @click="onSubmit" block :loading="isAjax" depressed :disabled="!canSubmit">REQUEST {{dropSize}} {{assetName}}</v-btn>
                 </v-card-text>
